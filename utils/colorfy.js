@@ -7,7 +7,9 @@ let selectedColormapForReport;
 
 const generateColormap = (nShades, isRandomColormap = false) => {
   const selectedColormap = isRandomColormap ? randomColormap : defaultColormap;
+
   selectedColormapForReport = selectedColormap;
+
   return colormap({
     colormap: selectedColormap,
     nshades: nShades,
@@ -24,6 +26,7 @@ const assignColorIndexToDataItem = (
 ) => {
   const val = dataItem[valueToColor];
   const colorIndex = Math.round((nShades / maxVal) * Math.round(val));
+
   return {
     ...dataItem,
     colorIndex,
@@ -32,6 +35,7 @@ const assignColorIndexToDataItem = (
 
 const assignColorToDataItem = (dataItem, colormap) => {
   const color = colormap[dataItem.colorIndex];
+
   return {
     ...dataItem,
     color,
@@ -42,6 +46,7 @@ const generateColorReport = (data, valueToColor, dataLimits, colormap) => {
   const dataVitals = data
     .map((dataItem) => {
       const { color, colorIndex } = dataItem;
+      
       return {
         val: dataItem[valueToColor],
         colorIndex,
@@ -85,5 +90,4 @@ module.exports = {
   assignColorToDataItem,
   generateColormap,
   generateColorReport,
-  selectedColormapForReport,
 };

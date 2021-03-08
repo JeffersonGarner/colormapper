@@ -3,7 +3,6 @@ const {
   assignColorToDataItem,
   generateColormap,
   generateColorReport,
-  selectedColormapForReport,
 } = require("./colorfy");
 
 module.exports = {
@@ -11,5 +10,4 @@ module.exports = {
   assignColorToDataItem,
   generateColormap,
   generateColorReport,
-  selectedColormapForReport,
 };

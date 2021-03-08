@@ -1,4 +1,4 @@
-const nData = 2000; // how many items in data set
+const nData = 20000; // how many items in data set
 
 // maximum values for items in data set
 
@@ -14,9 +14,9 @@ const zMax = 1000;
 const valueToColor = "zValue";
 const maxValueToColor = zMax;
 
-const nShades = 2000; // how many colors there are in colormap (minumum 9 for most maps)
+const nShades = 200; // how many colors there are in colormap (minumum 9 for most maps)
 
-const isRandomColormap = false; // false results in "jet" colormap
+const isRandomColormap = true; // false results in "jet" colormap
 
 const setup = {
   nData,
