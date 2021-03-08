@@ -10,7 +10,7 @@ In brief:
     value that reflects their relative position in the range of 0 to zMax (arbitrary)
     with respect to a jet colormap.
 
-# What do
+# Getting Started
 
 - npm install (colormap and fs)
 - get extensions "prettier" (for formatting on save) and "Color Highlight" (for observation)
