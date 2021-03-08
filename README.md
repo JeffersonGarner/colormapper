@@ -2,6 +2,8 @@
 
 A way to corolate a set of values with corresponding colors on a jet colormap.
 
+![demo](./result.png)
+
 In brief:
 
     Given an array of dataItems with the value 'zValue', ascribe each dataItem a 'color'
