@@ -1,0 +1,55 @@
+const allColormaps = [
+  "jet",
+  "hsv",
+  "spring",
+  "summer",
+  "autumn",
+  "winter",
+  "bone",
+  "copper",
+  "greys",
+  "yignbu",
+  "greens",
+  "yiorrd",
+  "bluered",
+  "rdbu",
+  "picnic",
+  "rainbow",
+  "portland",
+  "blackbody",
+  "earth",
+  "electric",
+  "alpha",
+  "viridis",
+  "inferno",
+  "magma",
+  "plasma",
+  "warm",
+  "cool",
+  "rainbow-soft",
+  "bathymetry",
+  "cdom",
+  "chlorophyll",
+  "density",
+  "freesurface-blue",
+  "freesurface-red",
+  "oxygen",
+  "par",
+  "phase",
+  "salinity",
+  "temperature",
+  "turbidity",
+  "velocity-blue",
+  "velocity-green",
+  "cubehelix",
+];
+
+const randomIndex = Math.round(allColormaps.length * Math.random());
+
+const randomColormap = allColormaps[randomIndex];
+const defaultColormap = allColormaps[0];
+
+module.exports = {
+  defaultColormap,
+  randomColormap,
+};
